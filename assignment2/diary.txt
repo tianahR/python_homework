@@ -1,0 +1,14 @@
+study 
+read
+sleep
+cook
+
+exit
+done for now
+nothing
+nothing
+nothing
+
+
+done for now
+work
