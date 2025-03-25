@@ -105,8 +105,9 @@ def grade(*args):
             return "C"
         elif avg >=60:
             return "D"
-        elif avg <60:
+        else:
             return"F"
+        
     except TypeError:
         return "Invalid data was provided."
                     
