@@ -95,7 +95,7 @@ print("\n==============DATAFRAME FROM EMPLOYEES.CSV===============")
 print(task2_employees)
 
 
-# 2.2 Read data from a JSON file:
+# Task 2.2 Read data from a JSON file:
 
 # Create a JSON file (additional_employees.json). The file adds two new employees. Eve, who is 28, lives in Miami, 
 # and has a salary of 60000, and Frank, who is 40, lives in Seattle, and has a salary of 95000.
@@ -125,7 +125,7 @@ print("\n==============DATAFRAME FROM additional_employees.json===============")
 print(json_employees)
 
 
-# 2.3 Combine DataFrames:
+# Task 2.3 Combine DataFrames:
 
 # Combine the data from the JSON file into the DataFrame Loaded from the CSV file and save it in the variable more_employees.
 # Print the combined Dataframe and run the tests.
@@ -144,7 +144,7 @@ print(more_employees)
 # ====================================================================
 # Task 3: Data Inspection - Using Head, Tail, and Info Methods
 
-# 3.1 Use the head() method:
+# Task 3.1 Use the head() method:
 
 # Assign the first three rows of the more_employees DataFrame to the variable first_three
 # Print the variable and run the tests.
@@ -158,7 +158,7 @@ print("\n==============first 3 employees===============")
 print(first_three)
 
 
-# 3.2 Use the tail() method:
+# Task 3.2 Use the tail() method:
 
 # Assign the last two rows of the more_employees DataFrame to the variable last_two
 # Print the variable and run the tests.
@@ -171,7 +171,7 @@ print("\n==============last 2 employees===============")
 print(last_two)
 
 
-# 3.3 Get the shape of a DataFrame
+# Task 3.3 Get the shape of a DataFrame
 # Assign the shape of the more_employees DataFrame to the variable employee_shape
 # Print the variable and run the tests
 # shape returns how many rows, and how many columns
@@ -184,7 +184,7 @@ print("\n==============employee shape===============")
 print(employee_shape)
 
 
-# 3.4 Use the info() method:
+# Task 3.4 Use the info() method:
 # Print a concise summary of the DataFrame using the info() method to understand the data types and non-null counts.
 
 
@@ -200,7 +200,7 @@ info()
 
 # Task 4: Data Cleaning
 
-# 4.1 Create a DataFrame from dirty_data.csv file and assign it to the variable dirty_data.
+# Task 4.1 Create a DataFrame from dirty_data.csv file and assign it to the variable dirty_data.
 
 # Print it and run the tests.
 # Create a copy of the dirty data in the varialble clean_data (use the copy() method). 
@@ -221,7 +221,7 @@ print("\n==============clean data===============")
 print(clean_data)
 
 
-# 4.2 Remove any duplicate rows from the DataFrame
+# Task 4.2 Remove any duplicate rows from the DataFrame
 # Print it and run the tests.
 
 def no_duplicate_rows():
@@ -235,7 +235,7 @@ print("\n==============clean data no duplicate ===============")
 print(clean_data)
 
 
-# 4.3 Convert Age to numeric and handle missing values
+# Task 4.3 Convert Age to numeric and handle missing values
 
 # Print it and run the tests.
 
@@ -250,7 +250,7 @@ print("\n==============Age to Numeric ===============")
 print(clean_data)
 
 
-# 4.4 Convert Salary to numeric and replace known placeholders (unknown, n/a) with NaN
+# Task 4.4 Convert Salary to numeric and replace known placeholders (unknown, n/a) with NaN
 
 # print it and run the tests.
 
@@ -263,7 +263,7 @@ print("\n==============salary to Numeric ===============")
 print(clean_data)
 
 
-# 4.5 Fill missing numeric values (use fillna).  Fill Age which the mean and Salary with the median
+# Task 4.5 Fill missing numeric values (use fillna).  Fill Age which the mean and Salary with the median
 
 # Print it and run the tests 
 
@@ -290,7 +290,7 @@ loop_hire_date()
 
 
 
-# 4.6 Convert Hire Date to datetime
+# Task 4.6 Convert Hire Date to datetime
 
 # Print it and run the tests
 
@@ -306,7 +306,7 @@ print("\n==============hire date to datetime ===============")
 print(clean_data)
 
 
-# 4.7 Strip extra whitespace and standardize Name and Department as uppercase
+# Task 4.7 Strip extra whitespace and standardize Name and Department as uppercase
 
 # Print it and run the tests
 
