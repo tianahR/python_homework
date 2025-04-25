@@ -30,5 +30,35 @@ try:
         
         for row in result:
             print(row)
+
+
+# TASK 2: Complex JOINs with Aggregation
+
+# Problem Statement:
+
+# Find the total price of each of the first 5 orders.  Again, there are several steps.  
+# You need to join the orders table with the line_items table and the products table.  
+# You need to GROUP_BY the order_id.  You need to select the order_id and the SUM of the product price 
+# times the line_item quantity.  Then, you ORDER BY order_id and LIMIT 5.  You don't need a subquery.
+# Print out the order_id and the total price for each of the rows returned.
+
+    query2 = """
+    SELECT o.order_id, SUM(p.price*l.quantity) FROM orders o 
+    JOIN line_items l ON o.order_id = l.order_id
+    JOIN products p on p.product_id = l.product_id 
+    GROUP BY o.order_id 
+    ORDER BY o.order_id LIMIT 5;
+    """
+
+    cursor.execute(query2)
+    
+    result = cursor.fetchall()
+    print('\n Total price of each of the first 5 orders:')
+    
+    for row in result:
+        print(row)
+    
+    
+
 except sqlite3.Error as e:
     print(f"An error occurred: {e}")
