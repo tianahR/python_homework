@@ -57,6 +57,94 @@ try:
     
     for row in result:
         print(row)
+        
+        
+# Task 3: An Insert Transaction Based on Data
+
+# Problem Statement:
+
+# You want to create a new order for the customer named Perez and Sons.  
+# The employee creating the order is Miranda Harris.  
+# The customer wants 10 of each of the 5 least expensive products.  
+# You first need to do a SELECT statement to retrieve the customer_id, 
+# another to retrieve the product_ids of the 5 least expensive products, and another to retrieve the employee_id.  
+# Then, you create the order record and the 5 line_item records comprising the order.  
+# You have to use the customer_id, employee_id, and product_id values you obtained from the SELECT statements.
+# You have to use the order_id for the order record you created in the line_items records. 
+# The inserts must occur within the scope of one transaction. 
+# Then, using a SELECT with a JOIN, print out the list of line_item_ids for the order along with the quantity and product name for each.
+
+    
+    # retrieve the customer_id
+    query3="""
+    SELECT customer_id FROM customers WHERE customer_name = 'Perez and Sons'
+    """
+    cursor.execute(query3)
+    result = cursor.fetchone()
+    customer_id = result[0]
+    print("\n Customer ID ",customer_id)
+    
+    # retrieve the product_ids of the 5 least expensive products
+    query3="""
+    SELECT product_id FROM products ORDER BY price DESC LIMIT 5
+    """
+    cursor.execute(query3)
+    result = cursor.fetchall()
+    print("\n Product_ids of the 5 least expensive products ")
+    for row in result:
+        print(row)
+    products = result
+        
+    # retrieve the employee_id of Miranda Harris
+    query3="""
+    SELECT employee_id FROM employees WHERE first_name = 'Miranda' AND last_name = 'Harris'
+    """
+    cursor.execute(query3)
+    result = cursor.fetchone()
+    employee_id = result[0]
+    print("\n Employee ID ",employee_id)
+    
+    # create the order record 
+    query3="""
+    INSERT OR IGNORE INTO orders (customer_id,employee_id,date) VALUES (?,?,DATETIME('now')) RETURNING order_id
+    """
+    cursor.execute(query3,(customer_id,employee_id))
+    result = cursor.fetchone()
+    print("\n Order ",result)
+    order_id = result[0]
+    
+    
+    # create the 5 line_item records comprising the order. 
+    for i in range(5):       
+        query3="""INSERT OR IGNORE INTO line_items (order_id,product_id, quantity) VALUES (?,?,?) """
+        cursor.execute(query3,(order_id,products[i][0],10))
+    conn.commit()
+    
+    # print out the list of line_item_ids for the order along with the quantity and product name for each.
+
+    
+    query3="""SELECT l.line_item_id, l.quantity, p.product_name FROM line_items l JOIN products p ON 
+        l.product_id = p.product_id WHERE l.order_id = ?;"""
+        
+    cursor.execute(query3, (order_id,))
+    
+    result = cursor.fetchall()
+    for row in result:
+        print(row)
+    
+    
+        
+    
+    
+    
+        
+    
+    
+    
+    
+    
+
+
     
     
 
