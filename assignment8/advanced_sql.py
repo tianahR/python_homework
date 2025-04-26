@@ -27,7 +27,7 @@ try:
     cursor.execute(query1)
     
     result = cursor.fetchall()
-    print('\n Total price of each of the first 5 orders:')
+    print('\n TASK 1 : Total price of each of the first 5 orders:')
     
     for row in result:
         print(row)
@@ -45,20 +45,20 @@ try:
 
 
         
-        query2 = """
-        SELECT o.order_id, l.line_item_id, p.product_name 
-        FROM orders o JOIN line_items l ON o.order_id = l.order_id 
-        JOIN products p ON p.product_id = l.product_id
-        WHERE o.order_id IN ( SELECT order_id FROM orders ORDER BY order_id LIMIT 5);
-        """
-        
-        cursor.execute(query2)
-        
-        result = cursor.fetchall()
-        print('\n Each Product names in the 5 first orders:')
-        
-        for row in result:
-            print(row)
+    query2 = """
+    SELECT o.order_id, l.line_item_id, p.product_name 
+    FROM orders o JOIN line_items l ON o.order_id = l.order_id 
+    JOIN products p ON p.product_id = l.product_id
+    WHERE o.order_id IN ( SELECT order_id FROM orders ORDER BY order_id LIMIT 5);
+    """
+    
+    cursor.execute(query2)
+    
+    result = cursor.fetchall()
+    print('\n TASK 2 : Each Product names in the 5 first orders:')
+    
+    for row in result:
+        print(row)
             
             
 # Problem Statement:
@@ -72,6 +72,26 @@ try:
 # using ON customer_id = customer_id_b.  You aliased the customer_id column in the subquery so 
 # that the column names wouldn't collide.  Then group by customer_id -- this GROUP BY comes after the subquery -- 
 # and get the average of the total price of the customer orders.  Return the customer name and the average_total_price.
+
+    query2 = """
+    SELECT customers.customer_name, AVG(order_totals.total_price) AS average_total_price
+    FROM customers LEFT JOIN 
+    (SELECT orders.customer_id AS customer_id_b, SUM(products.price * line_items.quantity) AS total_price
+    FROM orders JOIN line_items ON orders.order_id = line_items.order_id
+    JOIN products ON line_items.product_id = products.product_id GROUP BY orders.order_id
+    ) AS order_totals
+    ON customers.customer_id = order_totals.customer_id_b
+    GROUP BY customers.customer_id;
+
+    """
+    
+    cursor.execute(query2)
+        
+    result = cursor.fetchall()
+    print('\n TASK 2 : For each customer, the average price of their orders  :')
+        
+    for row in result:
+        print(row)
 
 
 
@@ -100,7 +120,7 @@ try:
     cursor.execute(query3)
     result = cursor.fetchone()
     customer_id = result[0]
-    print("\n Customer ID ",customer_id)
+    # print("\n Customer ID ",customer_id)
     
     # retrieve the product_ids of the 5 least expensive products
     query3="""
@@ -108,9 +128,9 @@ try:
     """
     cursor.execute(query3)
     result = cursor.fetchall()
-    print("\n Product_ids of the 5 least expensive products ")
-    for row in result:
-        print(row)
+    # print("\n Product_ids of the 5 least expensive products ")
+    # for row in result:
+    #     print(row)
     products = result
         
     # retrieve the employee_id of Miranda Harris
@@ -120,21 +140,21 @@ try:
     cursor.execute(query3)
     result = cursor.fetchone()
     employee_id = result[0]
-    print("\n Employee ID ",employee_id)
+    # print("\n Employee ID ",employee_id)
     
     # create the order record 
     query3="""
-    INSERT OR IGNORE INTO orders (customer_id,employee_id,date) VALUES (?,?,DATETIME('now')) RETURNING order_id
+    INSERT INTO orders (customer_id,employee_id,date) VALUES (?,?,DATETIME('now')) RETURNING order_id
     """
     cursor.execute(query3,(customer_id,employee_id))
     result = cursor.fetchone()
-    print("\n Order ",result)
+    # print("\n Order ",result)
     order_id = result[0]
     
     
     # create the 5 line_item records comprising the order. 
     for i in range(5):       
-        query3="""INSERT OR IGNORE INTO line_items (order_id,product_id, quantity) VALUES (?,?,?) """
+        query3="""INSERT INTO line_items (order_id,product_id, quantity) VALUES (?,?,?) """
         cursor.execute(query3,(order_id,products[i][0],10))
     conn.commit()
     
@@ -147,6 +167,7 @@ try:
     cursor.execute(query3, (order_id,))
     
     result = cursor.fetchall()
+    print("\n TASK 3 : List of line_item_ids for the order along with the quantity and product name for each. ")
     for row in result:
         print(row)
         
@@ -166,6 +187,9 @@ try:
         
     cursor.execute(query4)
     result = cursor.fetchall()
+    
+    print("\n TASK 4 : All employees associated with more than 5 orders. ")
+    
     for row in result:
         print(row)
     
