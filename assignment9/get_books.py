@@ -140,15 +140,6 @@ try:
         json.dump(results, json_file, indent=4)
 
 
-        
-    
-                
-                
-             
-            
-
-   
-
 except Exception as e:
     print(f"An error occured: {type(e).__name__} {e}")
 

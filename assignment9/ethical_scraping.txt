@@ -1,0 +1,27 @@
+Task 5: Ethical Web Scraping
+
+Goal:
+
+Understand the importance of ethical web scraping and robots.txt files.
+
+1. Access the robots.txt file for Wikipedia: Wikipedia Robots.txt.
+
+2. Analyze the file and answer the following questions. 
+in your python_homework/assignment9 directory
+        
+        
+Which sections of the website are restricted for crawling?
+Anything with Disallow: is restricted for crawling
+
+
+Are there specific rules for certain user agents?
+Yes, for example User-agent: MJ12bot
+
+3. Reflect on why websites use robots.txt and write 2-3 sentences explaining its purpose and how it promotes ethical scraping. 
+
+Robots.txt is a file that specifies which sections of a website can or cannot be accessed by web crawlers.
+It promotes ethical scraping by helping developers respect the site's resources and privacy boundaries
+By following these rules, scrapers avoid overloading servers and collecting sensitive or private data.
+
+
+
