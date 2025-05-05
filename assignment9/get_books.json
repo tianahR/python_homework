@@ -50,8 +50,8 @@
         "Format-Year": "eBook - 2022"
     },
     {
-        "Title": "Spanish for Beginners: A Comprehensive Guide for Learning the Spanish Language Fast",
-        "Author": "Language Equipped Travelers",
+        "Title": "Learn Spanish Like a Native for Beginners - Level 1: Learning Spanish in Your Car Has Never Been Eas",
+        "Author": "Learn Like a Native",
         "Format-Year": "eBook - 2021"
     },
     {
@@ -60,13 +60,13 @@
         "Format-Year": "eBook - 2021"
     },
     {
-        "Title": "Learn Spanish Like a Native for Beginners - Level 1: Learning Spanish in Your Car Has Never Been Eas",
-        "Author": "Learn Like a Native",
+        "Title": "Spanish: Beginner's Step by Step Course to Quickly Learning the Spanish Language, Spanish Grammar &",
+        "Author": "Michaels, Steven J.",
         "Format-Year": "eBook - 2021"
     },
     {
-        "Title": "Spanish: Beginner's Step by Step Course to Quickly Learning the Spanish Language, Spanish Grammar &",
-        "Author": "Michaels, Steven J.",
+        "Title": "Spanish for Beginners: A Comprehensive Guide for Learning the Spanish Language Fast",
+        "Author": "Language Equipped Travelers",
         "Format-Year": "eBook - 2021"
     },
     {
@@ -335,7 +335,37 @@
         "Format-Year": "Streaming Video - 2015"
     },
     {
+        "Title": "Regular -ar Verbs in the Preterite",
+        "Author": "no author",
+        "Format-Year": "Streaming Video - 2015"
+    },
+    {
         "Title": "Double Object Pronouns",
+        "Author": "no author",
+        "Format-Year": "Streaming Video - 2015"
+    },
+    {
+        "Title": "Expressing Time in Spanish",
+        "Author": "no author",
+        "Format-Year": "Streaming Video - 2015"
+    },
+    {
+        "Title": "Affirmatives, Negatives, and Demonstratives",
+        "Author": "no author",
+        "Format-Year": "Streaming Video - 2015"
+    },
+    {
+        "Title": "Direct Object Pronouns and Adverbs",
+        "Author": "no author",
+        "Format-Year": "Streaming Video - 2015"
+    },
+    {
+        "Title": "Reflexive Verbs",
+        "Author": "no author",
+        "Format-Year": "Streaming Video - 2015"
+    },
+    {
+        "Title": "Stem-Changing Verbs",
         "Author": "no author",
         "Format-Year": "Streaming Video - 2015"
     },
@@ -365,37 +395,7 @@
         "Format-Year": "Streaming Video - 2015"
     },
     {
-        "Title": "Affirmatives, Negatives, and Demonstratives",
-        "Author": "no author",
-        "Format-Year": "Streaming Video - 2015"
-    },
-    {
-        "Title": "Direct Object Pronouns and Adverbs",
-        "Author": "no author",
-        "Format-Year": "Streaming Video - 2015"
-    },
-    {
-        "Title": "Reflexive Verbs",
-        "Author": "no author",
-        "Format-Year": "Streaming Video - 2015"
-    },
-    {
-        "Title": "Stem-Changing Verbs",
-        "Author": "no author",
-        "Format-Year": "Streaming Video - 2015"
-    },
-    {
-        "Title": "Expressing Time in Spanish",
-        "Author": "no author",
-        "Format-Year": "Streaming Video - 2015"
-    },
-    {
         "Title": "More Affirmative and Negative Expressions",
-        "Author": "no author",
-        "Format-Year": "Streaming Video - 2015"
-    },
-    {
-        "Title": "Regular -ar Verbs in the Preterite",
         "Author": "no author",
         "Format-Year": "Streaming Video - 2015"
     },
@@ -460,7 +460,7 @@
         "Format-Year": "eBook - 2018 | Spanish"
     },
     {
-        "Title": "Real Spanish 102",
+        "Title": "Real Spanish 101",
         "Author": "Frobose, Mark",
         "Format-Year": "eAudiobook - 2015"
     },
@@ -470,7 +470,7 @@
         "Format-Year": "eAudiobook - 2015"
     },
     {
-        "Title": "Real Spanish 101",
+        "Title": "Real Spanish 102",
         "Author": "Frobose, Mark",
         "Format-Year": "eAudiobook - 2015"
     },
@@ -605,11 +605,6 @@
         "Format-Year": "Book - 2025 | Spanish"
     },
     {
-        "Title": "Puerto Rico",
-        "Author": "Mel\u00e9ndez Badillo, Jorell A.",
-        "Format-Year": "Book - 2024 | Spanish"
-    },
-    {
         "Title": "Tu lugar en el universo",
         "Author": "Chin, Jason",
         "Format-Year": "Book - 2022 | Spanish"
@@ -630,14 +625,14 @@
         "Format-Year": "Book - 2006"
     },
     {
-        "Title": "English for everyone",
-        "Author": "Harding, Rachel",
-        "Format-Year": "Book - 2016 | Spanish"
-    },
-    {
         "Title": "52 maneras de cultivar las habilidades naturales de su hijo",
         "Author": "Luck, Kenneth L.",
         "Format-Year": "Book - 2011 | Spanish"
+    },
+    {
+        "Title": "Puerto Rico",
+        "Author": "Mel\u00e9ndez Badillo, Jorell A.",
+        "Format-Year": "Book - 2024 | Spanish"
     },
     {
         "Title": "Super dinosaurios",
@@ -685,6 +680,11 @@
         "Format-Year": "Book - 2024 | Spanish"
     },
     {
+        "Title": "English for everyone",
+        "Author": "Harding, Rachel",
+        "Format-Year": "Book - 2016 | Spanish"
+    },
+    {
         "Title": "C\u00f3mo estimular d\u00eda a d\u00eda la inteligencia de tu hijo",
         "Author": "Laniado, Nessia",
         "Format-Year": "Book - 2007 | Spanish"
@@ -700,17 +700,22 @@
         "Format-Year": "eBook - 2025"
     },
     {
-        "Title": "A Hundred Reasons Why People Believe in Conspiracy Theories",
-        "Author": "Science-Based Language Learning Lab",
-        "Format-Year": "eBook - 2024"
-    },
-    {
         "Title": "100 Facts About Logical Reasoning",
         "Author": "Science-Based Language Learning Lab",
         "Format-Year": "eBook - 2024"
     },
     {
+        "Title": "A Hundred Reasons Why People Believe in Conspiracy Theories",
+        "Author": "Science-Based Language Learning Lab",
+        "Format-Year": "eBook - 2024"
+    },
+    {
         "Title": "100 Facts About Basic First Aid",
+        "Author": "Science-Based Language Learning Lab",
+        "Format-Year": "eBook - 2024"
+    },
+    {
+        "Title": "100 Facts About Fitness",
         "Author": "Science-Based Language Learning Lab",
         "Format-Year": "eBook - 2024"
     },
@@ -725,12 +730,12 @@
         "Format-Year": "eBook - 2024"
     },
     {
-        "Title": "100 Facts About Fitness",
+        "Title": "100 Facts About Burning Fat While You Sleep",
         "Author": "Science-Based Language Learning Lab",
         "Format-Year": "eBook - 2024"
     },
     {
-        "Title": "100 Facts About Burning Fat While You Sleep",
+        "Title": "A Hundred Reasons Why Traveling Increases Cultural Awareness",
         "Author": "Science-Based Language Learning Lab",
         "Format-Year": "eBook - 2024"
     },
@@ -740,22 +745,7 @@
         "Format-Year": "eAudiobook - 2024"
     },
     {
-        "Title": "A Hundred Reasons Why Traveling Increases Cultural Awareness",
-        "Author": "Science-Based Language Learning Lab",
-        "Format-Year": "eBook - 2024"
-    },
-    {
         "Title": "100 Reasons Why Bicycles Make Life Better",
-        "Author": "Science-Based Language Learning Lab",
-        "Format-Year": "eBook - 2024"
-    },
-    {
-        "Title": "Learn Spanish Bundle - Spanish for Beginners (Level 2)",
-        "Author": "Innovative Language Learning, LLC; SpanishPod101.com",
-        "Format-Year": "eAudiobook - 2024"
-    },
-    {
-        "Title": "100 Facts About Anti Inflammatory Diet",
         "Author": "Science-Based Language Learning Lab",
         "Format-Year": "eBook - 2024"
     },
@@ -775,12 +765,7 @@
         "Format-Year": "eBook - 2024"
     },
     {
-        "Title": "100 Facts About Book Marketing",
-        "Author": "Science-Based Language Learning Lab",
-        "Format-Year": "eBook - 2024"
-    },
-    {
-        "Title": "100 Facts About Positive Psychology",
+        "Title": "100 Facts About Anti Inflammatory Diet",
         "Author": "Science-Based Language Learning Lab",
         "Format-Year": "eBook - 2024"
     },
@@ -790,7 +775,22 @@
         "Format-Year": "eBook - 2024"
     },
     {
+        "Title": "100 Facts About Positive Psychology",
+        "Author": "Science-Based Language Learning Lab",
+        "Format-Year": "eBook - 2024"
+    },
+    {
+        "Title": "100 Facts About Book Marketing",
+        "Author": "Science-Based Language Learning Lab",
+        "Format-Year": "eBook - 2024"
+    },
+    {
         "Title": "100 Facts About Famous Literary Hoaxes and Forgeries",
+        "Author": "Science-Based Language Learning Lab",
+        "Format-Year": "eBook - 2024"
+    },
+    {
+        "Title": "1000 Common Adjectives",
         "Author": "Science-Based Language Learning Lab",
         "Format-Year": "eBook - 2024"
     },
@@ -900,17 +900,17 @@
         "Format-Year": "eBook - 2024"
     },
     {
-        "Title": "1000 Common Nouns",
-        "Author": "Science-Based Language Learning Lab",
-        "Format-Year": "eBook - 2024"
-    },
-    {
         "Title": "1000 Common Future Tense Verbs",
         "Author": "Science-Based Language Learning Lab",
         "Format-Year": "eBook - 2024"
     },
     {
-        "Title": "1000 Common Phrases",
+        "Title": "1000 Common Words",
+        "Author": "Science-Based Language Learning Lab",
+        "Format-Year": "eBook - 2024"
+    },
+    {
+        "Title": "1000 Common Verbs",
         "Author": "Science-Based Language Learning Lab",
         "Format-Year": "eBook - 2024"
     },
@@ -920,8 +920,8 @@
         "Format-Year": "eBook - 2024"
     },
     {
-        "Title": "Learn Spanish in Your Car or While You Sleep: Master Most Common Spanish Phrases",
-        "Author": "Language Learning Masters",
+        "Title": "Conversational Phrases Spanish Audiobook",
+        "Author": "Innovative Language Learning; SpanishPod101.com",
         "Format-Year": "eAudiobook - 2023"
     },
     {
@@ -930,8 +930,8 @@
         "Format-Year": "eBook - 2023"
     },
     {
-        "Title": "Conversational Phrases Spanish Audiobook",
-        "Author": "Innovative Language Learning; SpanishPod101.com",
+        "Title": "Learn Spanish in Your Car or While You Sleep: Master Most Common Spanish Phrases",
+        "Author": "Language Learning Masters",
         "Format-Year": "eAudiobook - 2023"
     },
     {
@@ -960,27 +960,17 @@
         "Format-Year": "eAudiobook - 2021"
     },
     {
-        "Title": "Learn Spanish: Mexican Spanish Survival Phrases, Volume 2",
-        "Author": "Innovative Language Learning, LLC",
-        "Format-Year": "eAudiobook - 2020"
-    },
-    {
         "Title": "Learn Spanish for Beginners",
         "Author": "Pro Language Learning",
         "Format-Year": "eAudiobook - 2020"
     },
     {
-        "Title": "Learn Spanish: Spanish Survival Phrases, Volume 2",
+        "Title": "Learn Spanish: Mexican Spanish Survival Phrases, Volume 2",
         "Author": "Innovative Language Learning, LLC",
         "Format-Year": "eAudiobook - 2020"
     },
     {
-        "Title": "Learn Spanish: Level 3: Lower Beginner Spanish, Volume 2",
-        "Author": "Innovative Language Learning, LLC",
-        "Format-Year": "eAudiobook - 2020"
-    },
-    {
-        "Title": "Learn Spanish - Level 2: Absolute Beginner Spanish, Volume 2",
+        "Title": "Learn Spanish - Level 6: Lower Intermediate Spanish, Volume 1",
         "Author": "Innovative Language Learning, LLC",
         "Format-Year": "eAudiobook - 2020"
     },
@@ -990,12 +980,22 @@
         "Format-Year": "eAudiobook - 2020"
     },
     {
+        "Title": "Learn Spanish - Level 7: Intermediate Spanish, Volume 1",
+        "Author": "Innovative Language Learning, LLC",
+        "Format-Year": "eAudiobook - 2020"
+    },
+    {
         "Title": "Learn Spanish: Survival Phrases",
         "Author": "Innovative Language Learning, LLC",
         "Format-Year": "eAudiobook - 2020"
     },
     {
-        "Title": "Learn Spanish - Level 7: Intermediate Spanish, Volume 1",
+        "Title": "Learn Spanish - Level 5: Upper Beginner Spanish, Volume 2",
+        "Author": "Innovative Language Learning, LLC",
+        "Format-Year": "eAudiobook - 2020"
+    },
+    {
+        "Title": "Learn Spanish - Level 2: Absolute Beginner Spanish, Volume 3",
         "Author": "Innovative Language Learning, LLC",
         "Format-Year": "eAudiobook - 2020"
     },

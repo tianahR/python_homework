@@ -79,35 +79,41 @@ try:
 # and then you find the span entry within it that contains this information.  You get that text too.  
 # You now have three pieces of text.  Create a dict that stores these values, with the keys being Title, Author, and Format-Year.  
 # Then append that dict to your results list.
+        
+        
         for result in search_list_results:
-        
+            
             book_dict = {}
-        
+
         # title
         
             try:
                 book_title = result.find_element(By.CSS_SELECTOR,'span.title-content')
-                book_dict['Title'] = book_title.text.strip()
-            except Exception:
-                book_dict['Title'] = 'no title'
+                if book_title:
+                    book_dict['Title'] = book_title.text.strip()
+                else:
+                    book_dict['Title'] = 'no title'
         
         # author
-            try:
+          
                 book_authors = result.find_elements(By.CSS_SELECTOR,'a.author-link')
                 if book_authors:
                     book_dict['Author'] = '; '.join([author.text.strip() for author in book_authors])
                 else:
                     book_dict['Author'] = 'no author'
-            except Exception:
-                book_dict['Author'] = 'no author'
+            
             
         # Format-Year
-            try:
+            
                 book_format_year_div = result.find_element(By.CSS_SELECTOR,'div.cp-format-info')
                 book_format_year = book_format_year_div.find_element(By.CSS_SELECTOR,'span.display-info-primary ')
-                book_dict['Format-Year'] = book_format_year.text.strip()
-            except Exception:
-                book_dict['Format-Year'] = 'no format/year'
+                if book_format_year:
+                    book_dict['Format-Year'] = book_format_year.text.strip()
+                else:
+                    book_dict['Format-Year'] = 'no format/year'
+                    
+            except Exception as e:
+                print(f"An error occured: {type(e).__name__} {e}")
     
             results.append(book_dict)
             
