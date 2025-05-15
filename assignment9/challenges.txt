@@ -1,0 +1,7 @@
+
+Task 6:5 
+
+Challenges I faced is to find the right XPath to target the top 10 list. At first, I tried using CSS selectors but the structure was nested.
+
+
+I resolved it by using Chrome DevTools to inspect the element and verify the XPath, and by printing the data before writing to the CSV.
