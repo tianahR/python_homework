@@ -9,6 +9,8 @@
 # Give appropriate titles, labels, and colors.
 # Show the plot.
 
+# %%
+
 import pandas as pd
 import matplotlib.pyplot as plt
 import sqlite3
@@ -23,3 +25,4 @@ with sqlite3.connect("../db/lesson.db") as conn:
 
 df.plot(x="last_name", y="revenue", kind="bar", color="skyblue", title="Employee Results")
 plt.show()
+# %%
