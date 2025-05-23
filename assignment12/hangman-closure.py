@@ -27,10 +27,17 @@ def make_hangman(secret_word):
 # Task 4:3 Within hangman-closure.py, implement a hangman game that uses make_hangman(). Use the input() function to prompt for the secret word. 
 # Then use the input() function to prompt for each of the guesses, until the full word is guessed.
 
-secret_word = input("What is the secret word? ")
-game = make_hangman(secret_word)
-all_guessed = False
-while not all_guessed:
-    letter = input("What letter do you guess? ")
-    all_guessed = game(letter)
+while True:
+
+    secret_word = input("What is the secret word? ")
+    game = make_hangman(secret_word)
+    all_guessed = False
+    while not all_guessed:
+        letter = input("What letter do you guess? ")
+        all_guessed = game(letter)
+        
+    # Task 4-4 Test your program by playing a few games.
+    play_again = input("Enter y to play again. ")
+    if play_again != "y":
+        break
     
