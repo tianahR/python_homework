@@ -135,6 +135,8 @@ while True:
             print(board)
             print(state[1])
             break
-    play_again = input("Enter y to play again. ")
-    if play_again != "y":
+        
+    # Task 6:3-5 Test your program by playing a few games.
+    play_again = input("Enter yes to play again. ")
+    if play_again != "yes":
         break
