@@ -1,0 +1,12 @@
+function: hello_world
+positional parameters: none
+keyword parameters: none
+return: None
+function: positional_args
+positional parameters: ('fara', 'tiana')
+keyword parameters: none
+return: True
+function: keyword_args
+positional parameters: none
+keyword parameters: {'first': 'fara', 'second': 'tiana'}
+return: <function log_decorator at 0x0000023577F73BA0>
